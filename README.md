@@ -9,3 +9,5 @@ The results are shown below:
 
 ![alt text](https://github.com/SeokSah/stackOverFlowData/blob/master/languageCountUpdate.png)
 ![alt text](https://github.com/SeokSah/stackOverFlowData/blob/master/salaryLanguage.png)
+
+Data taken from https://www.kaggle.com/stackoverflow/stack-overflow-2018-developer-survey
