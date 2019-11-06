@@ -7,5 +7,5 @@ The data was then visualized using two different barplots. One is a countplot fo
 
 The results are shown below:
 
-![alt text](https://github.com/SeokSah/stackOverFlowData/blob/master/languageCount.png)
+![alt text](https://github.com/SeokSah/stackOverFlowData/blob/master/languageCountUpdate.png)
 ![alt text](https://github.com/SeokSah/stackOverFlowData/blob/master/salaryLanguage.png)
