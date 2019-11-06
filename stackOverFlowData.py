@@ -9,6 +9,7 @@ Created on Tue Nov  5 00:01:26 2019
 import pandas as pd
 import numpy as np
 import seaborn as sns
+import matplotlib.pyplot as plt
 
 
 data = pd.read_csv("survey_results_public.csv")
@@ -27,9 +28,12 @@ salaryLanguage = salaryLanguage.groupby(["LanguageWorkedWith"], as_index = False
 
 salaryLanguage.sort_values(["ConvertedSalary"], inplace = True, ascending = False)
 print(salaryLanguage)
-#sns.barplot(x = "ConvertedSalary", y ="LanguageWorkedWith", data = salaryLanguage, ci = None).figure.tight_layout()
+#ax = sns.barplot(x = "ConvertedSalary", y ="LanguageWorkedWith", data = salaryLanguage, ci = None).figure.tight_layout()
 
-sns.countplot(y="LanguageWorkedWith", data = data, order = data["LanguageWorkedWith"].value_counts().index).figure.tight_layout()
-
+ax = sns.countplot(y="LanguageWorkedWith", data = data, order = data["LanguageWorkedWith"].value_counts().index).figure.tight_layout()
+plt.xlabel("Count")
+#plt.xlabel("Salary ($)")
+plt.ylabel("Programming Language")
+plt.show(ax)
 
 #print(data["LanguageWorkedWith"])
